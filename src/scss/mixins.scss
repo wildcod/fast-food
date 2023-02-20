@@ -8,27 +8,32 @@
 
 
 /* Recommended Type System */
-@mixin header($color) {
+@mixin hero($color) {
     @include font(80px, 500, 80px, $color);
-    letter-spacing: -2px;
+    // letter-spacing: -2px;
+}
+
+@mixin header($color) {
+    @include font(42px, 500, 36px, $color);
+    // letter-spacing: -1px;
 }
 
 @mixin headline($color) {
-    @include font(45px, 500, 50px, $color);
-    letter-spacing: -1px;
+    @include font(32px, 500, 24px, $color);
+    // letter-spacing: -1px;
 }
 
 @mixin sub-head($color) {
-    @include font(30px, 500, 32px, $color);
-    letter-spacing: -1px;
+    @include font(28px, 500, 26px, $color);
+    // letter-spacing: -1px;
 }
 
 @mixin small-sub-head($color) {
-    @include font(22px, 500, 26px, $color);
+    @include font(24px, 500, 24px, $color);
 }
 
 @mixin body($color) {
-    @include font(21px, 300, 32px, $color);
+    @include font(22px, 300, 32px, $color);
 }
 
 @mixin medium-body($color) {
@@ -40,7 +45,7 @@
 }
 
 @mixin mini-body($color) {
-    @include font(12px, 400, 22px, $color);
+    @include font(12px, 300, 22px, $color);
 }
 
 /* End Recommended Type System */

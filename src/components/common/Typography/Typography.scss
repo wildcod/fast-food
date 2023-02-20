@@ -1,22 +1,19 @@
-@import '../../../../scss/variables.scss';
-@import '../../../../scss/mixins.scss';
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
 
-.fast-food-typography {
-    color: $color-black;
 
-    .typography-body {
-        @include body($color-black);
-    }
+.typography-body {
+    @include body($color-black);
+}
 
-    .typography-medium-body {
-        @include medium-body($color-black);
-    }
+.typography-medium {
+    @include medium-body($color-black);
+}
 
-    .typography-small-body {
-        @include small-body($color-black);
-    }
+.typography-small {
+    @include small-body($color-black);
+}
 
-    .typography-mini-body {
-        @include mini-body($color-black);
-    }
+.typography-mini {
+    @include mini-body($color-black);
 }

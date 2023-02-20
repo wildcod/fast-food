@@ -8,6 +8,9 @@ interface Props {
   weight?: number;
   color?: string;
   fontSize?: number | string;
+  style?: React.CSSProperties;
+  cursor?: string;
+  textDecoration?: 'underline' | 'strikethrough';
 }
 
 const Typography: React.FC<Props> = ({
@@ -17,12 +20,15 @@ const Typography: React.FC<Props> = ({
   weight,
   fontSize,
   color,
+  textDecoration,
+  style = {},
+  cursor = 'unset',
 }) => {
   const OuterTag: any = component;
   return (
     <OuterTag
-      className={`fast-food-typography ${`typography-${variant}`}`}
-      style={{ fontSize, color, weight }}
+      className={`typography-${variant}`}
+      style={{ ...style, fontSize, cursor, color, weight, textDecoration }}
     >
       {children}
     </OuterTag>
