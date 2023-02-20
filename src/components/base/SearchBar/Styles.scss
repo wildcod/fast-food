@@ -1,0 +1,28 @@
+@import '../../../scss/variables.scss';
+
+.search-bar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    >.wrapper {
+        width: 100%;
+        display: flex;
+        height: 3.1rem;
+        align-items: center;
+        background: $color-white;
+        border-radius: 0.5rem;
+        box-shadow: $search-bar-shadow;
+        border: 1px solid $color-gray-light;
+    }
+
+    .search-place-container {
+        height: 100%;
+        flex: 2;
+    }
+
+    .main-search-container {
+        height: 100%;
+        flex: 4;
+    }
+}
