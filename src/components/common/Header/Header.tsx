@@ -17,7 +17,6 @@ const Header: React.FC = () => {
             <ul>
               <li>
                 <img src={cartImage} width="30" height="30" />
-                <span>Cart</span>
               </li>
             </ul>
           </nav>

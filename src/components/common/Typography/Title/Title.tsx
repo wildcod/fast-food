@@ -4,7 +4,7 @@ import './Title.scss';
 interface Props {
   level: 1 | 2 | 3 | 4 | 5;
   children: React.ReactNode;
-  style?: React.CSSProperties;
+  className?: string;
   cursor?: string;
   color?: string;
   fontSize?: number;
@@ -18,14 +18,14 @@ const Title: React.FC<Props> = ({
   color,
   textDecoration,
   weight,
-  style = {},
+  className,
   cursor = 'unset',
 }) => {
   const OuterTag: any = `h${level}`;
   return (
     <OuterTag
-      className={`title-level-${level}`}
-      style={{ ...style, fontSize, color, cursor, weight, textDecoration }}
+      className={`title-level-${level} ${className}`}
+      style={{ fontSize, color, cursor, weight, textDecoration }}
     >
       {children}
     </OuterTag>

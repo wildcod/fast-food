@@ -1,0 +1,11 @@
+@import '../../../scss/variables.scss';
+
+.search-filter-container {
+    padding: $s6 0;
+    display: flex;
+    justify-content: space-between;
+
+    >.restaurant-count {
+        margin: 0
+    }
+}
