@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "create-file": "node src/scripts/folderMaker.ts",
+    "create-folder": "node src/scripts/folderMaker.ts",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
