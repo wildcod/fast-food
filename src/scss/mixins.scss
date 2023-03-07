@@ -44,6 +44,10 @@
     @include font(16px, 300, 24px, $color);
 }
 
+@mixin xsmall-body($color) {
+    @include font(14px, 300, 24px, $color);
+}
+
 @mixin mini-body($color) {
     @include font(12px, 300, 22px, $color);
 }

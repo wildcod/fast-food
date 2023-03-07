@@ -4,7 +4,7 @@ import './Typography.scss';
 interface Props {
   component: string;
   children: React.ReactNode;
-  variant?: 'body' | 'medium' | 'small' | 'mini';
+  variant?: 'body' | 'medium' | 'small' | 'xsmall' | 'mini';
   weight?: number;
   color?: string;
   fontSize?: number | string;

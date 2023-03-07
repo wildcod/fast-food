@@ -2,4 +2,5 @@
 **/build
 **/dist
 **/src/assets
+**/src/scripts
 ./.eslintrc.json

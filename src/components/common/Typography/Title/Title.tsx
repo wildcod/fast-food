@@ -25,7 +25,7 @@ const Title: React.FC<Props> = ({
   return (
     <OuterTag
       className={`title-level-${level} ${className}`}
-      style={{ fontSize, color, cursor, weight, textDecoration }}
+      style={{ fontSize, color, cursor, fontWeight: weight, textDecoration }}
     >
       {children}
     </OuterTag>
