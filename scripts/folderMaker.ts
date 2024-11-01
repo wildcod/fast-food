@@ -1,4 +1,3 @@
-// @ts-nocheck
 const fs = require('fs');
 const path = require('path');
 
@@ -13,7 +12,7 @@ const writeToFile = (filePath, contentList) => {
 
 // -------------------- Component content -----------------------------//
 
-const getTsxFileContent = () => (
+const getTsxFileContent = (componentName) =>
   `import React from 'react';
    import './${componentName}.scss';
    interface Props {}
@@ -22,8 +21,7 @@ const getTsxFileContent = () => (
          <div>${componentName}</div>
     );
   };
-  export default ${componentName};`
-);
+  export default ${componentName};`;
 
 // --------------------Reading Inputs through terminal-----------------------------//
 
@@ -33,7 +31,7 @@ const createComponentDir = (fileLoc, componentName) => {
     creatDir(dir);
     console.log('Folder Created !!');
   }
-}
+};
 
 // -------------------- Creating Component File -----------------------------//
 
@@ -57,7 +55,6 @@ const createComponentScssFile = (fileLoc, componentName) => {
   writeToFile(fileName, fileContent);
 };
 
-
 // --------------------Reading Inputs through terminal-----------------------------//
 
 (() => {
@@ -65,11 +62,11 @@ const createComponentScssFile = (fileLoc, componentName) => {
   const componentName = process.argv[3];
 
   try {
-    createComponentDir(folderPath, componentName)
+    createComponentDir(folderPath, componentName);
     createComponentFile(folderPath, componentName);
     createComponentScssFile(folderPath, componentName);
-    console.log('Created Successfully !!')
+    console.log('Created Successfully !!');
   } catch (error) {
-    console.error(error.message)
+    console.error(error.message);
   }
 })();
